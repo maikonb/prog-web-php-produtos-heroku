@@ -51,14 +51,21 @@ git commit -m "Adicionando projeto."
 heroku create
 ```
 
-- Adicione o mysql em seu deploy: 
+- Adicione o mysql em seu deploy (você precisa adicionar um método de pagamento para utilizar este addon, mesmo não sendo cobrado): 
 ```
 heroku addons:create cleardb:ignite
 ```
 
 - Certique-se de que o addon foi instalado corretamente:
 ```
-heroku addons:create cleardb:ignite
+heroku addons
+```
+A saída deve ser parecida com essa:
+```
+Add-on                               Plan    Price  State  
+───────────────────────────────────  ──────  ─────  ───────
+cleardb (cleardb-rectangular-71496)  ignite  free   created
+ └─ as CLEARDB_DATABASE
 ```
 
 - Realize um push de seu projeto para o respositório do heroku:
