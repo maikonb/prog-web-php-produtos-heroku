@@ -22,9 +22,9 @@ Essa aplicação contém todos os recursos aprendidos até agora na disciplina i
 
 ## Passos para deploy no Heroku
 
-O [Heroku](https://www.heroku.com/) consiste uma plataforma para realizar deploys de aplicações e possui muitos recursos para automatizar o processo de deploy e também para maximizar o desempenho delas, além de ferramentas de monitoramento e gerência de aplicações. Ele também possibilita que você possa usar seu serviço gratuitamente, dependendo dos recursos que utiliza.
+O [Heroku](https://www.heroku.com/) consiste uma plataforma para realizar deploys de aplicações e possui muitos recursos para automatizar o processo de deploy, maximizar o desempenho das aplicações, além de ferramentas de monitoramento e gerência. Ele também possibilita que seu serviço possa ser utilizado gratuitamente, dependendo dos recursos que são utilizados.
 
-Utilizaremos o Heroku para realizar o deploy dessa aplicação exemplo e não **deve** ser cobrada nenhuma taxa, pois utilizaremos os recursos mínimos.
+Utilizaremos o Heroku para realizar o deploy dessa aplicação exemplo e ***não deve** ser cobrada nenhuma taxa, pois utilizaremos os recursos mínimos.
 
 Para realizar o deploy da aplicação:
 
@@ -34,7 +34,10 @@ Para realizar o deploy da aplicação:
 1. Abra seu terminal e entre na pasta do seu projeto clonado (com o diretório .git já removido)
 1. Com o terminal aberto e já dentro da pasta do projeto, execute os passos a seguir.
 
-- Faça o login no heroku utilizando o comando: ```heroku login``` 
+- Faça o login no heroku utilizando o comando: 
+```
+heroku login
+``` 
 
 - Crie um repositório git e faça seu primeiro commit incluindo todos os arquivos (Obs.: Você precisa ter o git instalado em seu computador):
 ```
@@ -43,7 +46,10 @@ git add .
 git commit -m "Adicionando projeto."
 ```
 
-- Crie um projeto heroku: ```heroku create```.
+- Crie um projeto heroku: 
+```
+heroku create
+```
 
 - Adicione o mysql em seu deploy: 
 ```
@@ -71,7 +77,7 @@ heroku run 'php /app/migration/criar-registros.php'
 heroku open
 ```
 
-***Importante:*** A cada nova modificação: adicione o arquivo modificado ao repositório e realize novamente o push:
+***Importante:*** A cada nova modificação em seu código fonte: adicione o arquivo modificado ao repositório e realize novamente o push:
 ```
 git add *
 git commit -m "Adicionando modificacao ao projeto."
