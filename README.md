@@ -16,6 +16,12 @@ Essa aplicação contém todos os recursos aprendidos até agora na disciplina i
 - Frameworks Backend: nenhum
 - Deploy: Heroku
 
+## Diagrama Modelo Entidade Relacionamento do exemplo
+
+![Modelo Entidade Relacionamento](/images/modelo-cadastro-produtos.png)
+
+## Passos para deploy no Heroku
+
 ```
 heroku login
 git add .
