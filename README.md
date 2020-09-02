@@ -88,4 +88,5 @@ heroku open
 ```
 git add *
 git commit -m "Adicionando modificacao ao projeto."
+git push heroku master
 ```
